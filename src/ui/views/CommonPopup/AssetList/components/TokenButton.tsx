@@ -44,7 +44,7 @@ export function SpecialTokenListPopup({
       closable
       push={false}
       onClose={onClose}
-      title={`${len} ${label}`}
+      title={`${len} ${label}${len === 1 ? '' : 's'}`}
       isSupportDarkMode
     >
       {!hiddenSubTitle && (
@@ -127,7 +127,10 @@ export const TokenButton: React.FC<Props> = ({
         )}
       >
         <span>{len}</span>
-        <span>{label}</span>
+        <span>
+          {label}
+          {len === 1 ? '' : 's'}
+        </span>
         <LowValueArrowSVG className="w-14 h-14" />
       </button>
 
