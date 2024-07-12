@@ -1202,6 +1202,7 @@
           "summaryDescription": "All assets in protocols (e.g. LP tokens) are resolved to the underlying assets for statistical calculations",
           "noMatch": "No Match",
           "lowValueDescription": "Low value assets will be shown here",
+          "lowValueAssets_0": "{{count}} low value token",
           "lowValueAssets_one": "{{count}} low value token",
           "lowValueAssets_other": "{{count}} low value tokens"
         },
